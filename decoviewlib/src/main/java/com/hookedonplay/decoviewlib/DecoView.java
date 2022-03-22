@@ -22,10 +22,12 @@ import android.graphics.Color;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+
 import com.hookedonplay.decoviewlib.charts.ChartSeries;
 import com.hookedonplay.decoviewlib.charts.DecoDrawEffect;
 import com.hookedonplay.decoviewlib.charts.LineArcSeries;

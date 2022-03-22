@@ -17,11 +17,13 @@ package com.hookedonplay.decoviewlib.events;
 
 import android.os.Build;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+
 import com.hookedonplay.decoviewlib.charts.DecoDrawEffect;
 
 /**

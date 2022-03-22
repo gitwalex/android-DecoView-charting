@@ -32,15 +32,25 @@ Step 2. Add the dependency in the form
 	    compile 'com.github.bmarrdev:android-DecoView-charting:v1.2'
 	}
 
+Alternative Step 2a. For using the androidX-compatible Version add the dependency in the form
+
+	dependencies {
+	    compile 'com.github.gitwalex:android-DecoView-charting:v1.3'
+	}
 
 Usage
 ===
 
-DecoView is subclassed from the Android View class. Just like other View subclasses, such as TextView and ImageView, it can be added and configured from your layout XML then controlled in your Activity code.
+DecoView is subclassed from the Android View class. Just like other View subclasses, such as TextView and ImageView, it
+can be added and configured from your layout XML then controlled in your Activity code.
 
-This repository includes a number of samples for constructing and animating a DecoView. You will find the code for the samples in the [sampleapp project](https://github.com/bmarrdev/android-DecoView-charting/tree/master/sampleapp/src/main/java/com/hookedonplay/decoviewsample).
+This repository includes a number of samples for constructing and animating a DecoView. You will find the code for the
+samples in
+the [sampleapp project](https://github.com/bmarrdev/android-DecoView-charting/tree/master/sampleapp/src/main/java/com/hookedonplay/decoviewsample)
+.
 
 The main concepts you need to understand are:
+
 - DecoView is a View, it subclasses android.view.View
 - Use [SeriesItem.Builder](https://github.com/bmarrdev/android-DecoView-charting/blob/master/decoviewlib/src/main/java/com/hookedonplay/decoviewlib/charts/SeriesItem.java) to build one or more data series or your DecoView will not be visible
 - Use [DecoEvent.Builder](https://github.com/bmarrdev/android-DecoView-charting/blob/master/decoviewlib/src/main/java/com/hookedonplay/decoviewlib/events/DecoEvent.java) to schedule animating events for each data series

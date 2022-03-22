@@ -20,7 +20,8 @@ import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.graphics.SweepGradient;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 abstract public class ArcSeries extends ChartSeries {
     /**
@@ -59,12 +60,11 @@ abstract public class ArcSeries extends ChartSeries {
         final float endPos = calcCurrentPosition(mPositionStart, mPositionEnd, mSeriesItem.getMinValue(), mSeriesItem.getMaxValue(), mPercentComplete);
         mArcAngleSweep = adjustSweepDirection(verifyMinSweepAngle(endPos * mAngleSweep));
         mArcAngleStart = mAngleStart;
-
         if (mSeriesItem.getDrawAsPoint()) {
             mArcAngleStart = adjustDrawPointAngle(mArcAngleSweep);
             mArcAngleSweep = adjustSweepDirection(getMinSweepAngle());
-        } else if (mArcAngleSweep == 0) {
-            return true;
+        } else {
+            return mArcAngleSweep == 0;
         }
 
 

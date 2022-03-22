@@ -21,8 +21,10 @@ import android.graphics.LinearGradient;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Shader;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import com.hookedonplay.decoviewlib.DecoView;
 
 public class LineSeries extends ChartSeries {
